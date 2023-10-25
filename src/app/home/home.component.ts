@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { Service } from './server.server';
+import { Service } from '../server.server';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-})
-export class AppComponent {
-  title = 'application';
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
+  })
+export class HomeComponent {
   public photos:Array<any>=[];
   constructor(private service: Service){}
   ngOnInit(): void {
